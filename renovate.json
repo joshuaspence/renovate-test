@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "rangeStrategy": "bump",
+  "stabilityDays": 5,
+  "packageRules": [
+    {
+      "groupName": "node dependencies without auto merge",
+      "matchPackageNames": [
+        "node",
+        "@types/node"
+      ],
+      "stabilityDays": 0
+    }
+  ]
+}
