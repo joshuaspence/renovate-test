@@ -1,0 +1,15 @@
+---
+name: 'Renovate'
+on:
+  workflow_dispatch: {}
+jobs:
+  renovate:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'actions/checkout@v3'
+      - uses: 'renovatebot/github-action@v32.143.1'
+        env:
+          RENOVATE_REPOSITORIES: '${{ github.repository }}'
+        with:
+          configurationFile: 'renovate.json'
+          token: '${{ secrets.RENOVATE_TOKEN }}'

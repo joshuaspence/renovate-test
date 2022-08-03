@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "renovate": "^32.143.1"
+  },
+  "engines": {
+    "node": "^16"
   }
 }
