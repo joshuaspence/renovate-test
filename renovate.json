@@ -12,6 +12,7 @@
         "node",
         "@types/node"
       ],
+      "versioning": "node",
       "stabilityDays": 0
     }
   ]
